@@ -12,15 +12,6 @@
   <!--3.5.1版改進於3.5內容：
 加速度圖表優化，加入圖例，防止圖表出框，難以閱讀。
 加入說明文字。-->
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>列車速度 v3.5.1</title>
-  </head>
-<body>
   <style>
     /* 1. 線上引入思源黑體 (Noto Sans TC) 與 思源等寬數字 (Noto Sans Mono)
    ========================================================================== */
@@ -1268,7 +1259,7 @@ function resetAll() {
     document.getElementById('speedPace').innerHTML = `相當於在 -- 秒內走了 1 公里`;
 }
 // --- 10. 系統主題自動監聽與模擬核心 (備用) ---
-/*const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 function handleThemeChange(e) {
     if (!localStorage.getItem('calculator-theme')) { 
@@ -1290,7 +1281,7 @@ function simulateSystemTheme(mode) {
         body.classList.remove('light-mode');
         console.log("[系統模擬] 成功發送訊號：手機已切換至【深色模式】");
     }
-}*/
+}
     </script>
   </body>
     
